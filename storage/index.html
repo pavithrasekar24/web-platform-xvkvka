@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage</title>
+  </head>
+  <body>
+    <h1>Application Storage</h1>
+    <ul>
+      <li>
+        LocalStorage -> 5mb/10mb ->through out access browser (chrome)
+        ->manually delete->store baseurl /retrive
+        <br />
+        getItem,setItem(k-str type,v-expected string -obj/arr [Object Object]
+        ),clear,removeItem
+      </li>
+      <li>
+        SessionStorage -> 5mb/10mb ->per tab(chrome) ->tab closed -delete->store
+        per tab /retrive
+        <br />
+        getItem,setItem(k-str type,v-expected string -obj/arr [Object Object]
+        ),clear,removeItem
+      </li>
+      <li>
+        Cookies -> 4mb capacity ->through out access browser -> expriry times
+        automatica delete -> client/server
+      </li>
+    </ul>
+    <button onclick="handleSet()">Set</button>
+    <button onclick="handleGet()">Get</button>
+    <button onclick="handleRemove()">Remove</button>
+    <button onclick="handleClear()">Clear</button>
+  </body>
+  <script src="./script.js"></script>
+</html>
