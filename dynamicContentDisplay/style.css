@@ -1,0 +1,13 @@
+.my-sub-head {
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+input[type='text'],
+input[type='number'] {
+  margin: 20px;
+  border-radius: 10px;
+  padding: 8px 15px;
+}

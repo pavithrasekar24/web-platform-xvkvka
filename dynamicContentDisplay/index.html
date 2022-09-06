@@ -6,8 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Content Display</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Dynamic Content Display</h1>
+    <h3>DOM -> document object model -> Element , methods , attributes</h3>
+    <ul>
+      <h2>
+        fetch & add additional behaviour(style,content,attribute) to an element
+      </h2>
+      <li>document.getElementById , getElementsByName</li>
+      <li>
+        document.querySelector( id => #idName, class => .className, group =>
+        tagName)
+      </li>
+      <h2>element create additional behaviour-> body append</h2>
+      <li>document.createElement</li>
+    </ul>
+    <p id="myPara"></p>
+    <h4 id="subHead">Sub heading</h4>
+    <button onclick="changeStyle()">Change Style</button>
+    <script>
+      let myPara = document.getElementById('myPara');
+      console.log(myPara);
+      myPara.innerText =
+        'In publishing and graphic design, <mark> i was a kid</mark> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available';
+    </script>
+    <br />
+    <input
+      type="checkbox"
+      name="language"
+      value="Java"
+      onchange="handleCheckBox()"
+    />Java<br />
+    <input
+      type="checkbox"
+      name="language"
+      value="Python"
+      onchange="handleCheckBox()"
+    />Python<br />
+    <input
+      type="checkbox"
+      name="language"
+      value="Dot Net"
+      onchange="handleCheckBox()"
+    />Dot Net<br />
+
+    <input
+      type="number"
+      id="phNum"
+      placeholder="Enter Phone"
+      onchange="handlePh()"
+    /><br />
+    <input
+      type="text"
+      id="firstName"
+      placeholder="Enter FirstName"
+      onchange="handleName()"
+    /><br />
+
+    <button type="button" class="alert">Alert</button>
   </body>
+  <script src="./script.js"></script>
 </html>
