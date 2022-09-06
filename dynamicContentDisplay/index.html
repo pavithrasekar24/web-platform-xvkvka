@@ -37,35 +37,39 @@
       type="checkbox"
       name="language"
       value="Java"
+      id="java"
       onchange="handleCheckBox()"
-    />Java<br />
+    /><label for="java">Java</label><br />
     <input
       type="checkbox"
       name="language"
       value="Python"
+      id="python"
       onchange="handleCheckBox()"
-    />Python<br />
+    /><label for="python">Python</label><br />
     <input
       type="checkbox"
       name="language"
       value="Dot Net"
+      id="dotNet"
       onchange="handleCheckBox()"
-    />Dot Net<br />
-
+    /><label for="dotNet">Dot Net</label><br />
+    <label for="phNum">Phone Number</label>
     <input
       type="number"
       id="phNum"
       placeholder="Enter Phone"
       onchange="handlePh()"
     /><br />
+    <label for="firstName">FirstName</label>
     <input
       type="text"
       id="firstName"
       placeholder="Enter FirstName"
       onchange="handleName()"
     /><br />
-
     <button type="button" class="alert">Alert</button>
+    <input type="file" />
   </body>
   <script src="./script.js"></script>
 </html>
