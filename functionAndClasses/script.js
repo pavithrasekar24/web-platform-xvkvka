@@ -41,7 +41,7 @@ let noOfNumbers = (result, ...n) => {
 };
 noOfNumbers(0, 1, 2, 3, 4, 5, 7, 8);
 
-//anomous function  -> w/o functionName
+//anonymous function  -> w/o functionName
 //self exectued function
 //ex1
 (function () {
