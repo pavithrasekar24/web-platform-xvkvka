@@ -1,5 +1,6 @@
 function handleSum() {
   console.log('added');
+  window.alert('hii');
 }
 
 //(x,y) ->arguments
@@ -56,3 +57,30 @@ let person = {
   },
 };
 console.log(person.fname, person.fullName());
+
+// default parameter -> if its pass args it will take that value else deafult value
+let displayMessage = (name, msg = 'Hai Gm') => {
+  console.log(name + ' ' + msg);
+};
+
+displayMessage('Peter', 'GE');
+displayMessage('Peter');
+
+//this  refers to object -> global object ->current instance
+class Store {
+  constructor(age) {
+    this.age = age;
+  }
+  // age = 26;
+  getAge() {
+    console.log('age::', this.age);
+  }
+}
+let s = new Store(26);
+let p = new Store(24);
+
+console.log(s.age, p.age);
+s.getAge();
+p.getAge();
+console.log(this);
+console.log(window.location);
