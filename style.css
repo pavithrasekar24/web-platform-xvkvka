@@ -1,7 +1,35 @@
 /* styling */
 h1 {
   color: blue;
+  text-align: center;
 }
 h2 {
   color: orange;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  margin: 20px;
+  list-style: none;
+  box-shadow: 7px 7px 8px 0px rgba(138, 130, 138, 0.64);
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  color: brown;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+li:hover {
+  background-color: lightblue;
+}
+li:hover > a {
+  font-weight: 600;
 }
