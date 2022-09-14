@@ -7,8 +7,8 @@ class Parent {
     return 'My Native Place is ' + this.place;
   }
 
-  static myName() {
-    return 'Name is Peter';
+  static myName(name) {
+    return 'Name is' + name;
   }
 }
 
@@ -20,7 +20,7 @@ console.log(
   '****',
   p.display(),
   '****',
-  Parent.myName()
+  Parent.myName('Vannasa')
 );
 
 class Child extends Parent {
@@ -35,4 +35,8 @@ class Child extends Parent {
 let c = new Child('Pattukottai', 'Thanjavur');
 console.log('child class ****', c.show());
 console.log('child class parent methods display ***', c.display());
-console.log('child class parent properties ***', c.place);
+console.log(
+  'child class parent properties ***',
+  c.place,
+  Parent.myName('Richard')
+);
