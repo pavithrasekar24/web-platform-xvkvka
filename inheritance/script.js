@@ -6,10 +6,22 @@ class Parent {
   display() {
     return 'My Native Place is ' + this.place;
   }
+
+  static myName() {
+    return 'Name is Peter';
+  }
 }
 
 let p = new Parent('Chennai');
-console.log('parent class', p.place, p.display());
+console.log(
+  'parent class',
+  '****',
+  p.place,
+  '****',
+  p.display(),
+  '****',
+  Parent.myName()
+);
 
 class Child extends Parent {
   constructor(place, district) {
