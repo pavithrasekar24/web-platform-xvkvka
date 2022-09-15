@@ -10,25 +10,54 @@
   <body>
     <h1>Validation</h1>
     <h2>Person Form</h2>
-    <form class="personForm">
+    <form class="personForm" name="personForm" onsubmit="handleSubmit()">
       <div class="input-field">
         <label for="fname">FirstName</label>
-        <input type="text" id="fname" placeholder="Enter FirstName" />
+        <input
+          name="fname"
+          oninput="handleFirstName()"
+          type="text"
+          id="fname"
+          placeholder="Enter FirstName"
+          required
+          minlength="4"
+          maxlength="10"
+        />
       </div>
-
+      <p id="fnameError"></p>
       <div class="input-field">
         <label for="age">Age</label>
-        <input type="number" id="age" placeholder="Enter Age" />
+        <input
+          name="age"
+          oninput="handleAge()"
+          type="text"
+          id="age"
+          placeholder="Enter Age"
+          required
+          min="18"
+          max="21"
+          pattern="\d{1,5}"
+        />
       </div>
+      <p id="ageError"></p>
 
       <div class="input-field">
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter Email" />
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Enter Email"
+          required
+          oninput="handleEmail()"
+        />
       </div>
+      <p id="emailError"></p>
 
       <div class="btn-field">
         <input type="submit" value="Submit" />
       </div>
     </form>
   </body>
+  <script src="./script.js"></script>
 </html>

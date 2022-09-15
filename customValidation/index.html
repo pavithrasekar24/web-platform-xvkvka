@@ -10,18 +10,38 @@
   <body>
     <h1>Custom Validation</h1>
     <h2>User Form</h2>
-    <form class="userForm">
+    <form class="userForm" name="userForm">
       <div class="input-field">
-        <input type="text" id="uname" placeholder="Enter UserName" />
+        <input
+          type="text"
+          id="uname"
+          placeholder="Enter UserName"
+          oninput="handleUser()"
+          name="username"
+          maxlength="15"
+        />
       </div>
+      <p id="userError"></p>
 
       <div class="input-field">
-        <input type="number" id="password" placeholder="Enter Password" />
+        <input
+          type="text"
+          id="password"
+          placeholder="Enter Password"
+          oninput="handlePwd()"
+          name="password"
+        />
       </div>
+
+      <p id="pwdError"></p>
+
       <div class="btn-field">
-        <button type="submit">Login</button>
+        <!-- <button type="submit">Login</button> -->
+
+        <input type="button" value="Login" onclick="handleSubmit()" />
         <button type="reset">Reset</button>
       </div>
     </form>
   </body>
+  <script src="./script.js"></script>
 </html>
