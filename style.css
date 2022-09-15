@@ -8,6 +8,7 @@ h1 {
 }
 h2 {
   color: orange;
+  text-align: center;
 }
 ul {
   display: flex;
@@ -34,4 +35,47 @@ li:hover {
 }
 li:hover > a {
   font-weight: 600;
+}
+
+form {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 7px 7px 8px 0px rgb(138 130 138 / 64%),
+    7px 7px 8px 0px rgb(138 130 138 / 64%);
+}
+
+.input-field {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+.input-field input {
+  border-radius: 10px;
+  padding: 5px 15px;
+  border: 1px solid rgb(94, 94, 197);
+}
+.userForm {
+  text-align: center;
+}
+input::placeholder {
+  font-family: cursive;
+  color: rgb(94, 94, 197);
+}
+.input-field label {
+  width: 30%;
+}
+button,
+input[type='submit'] {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.btn-field {
+  display: flex;
+  justify-content: center;
 }
